@@ -25,10 +25,15 @@ axios('https://fakestoreapi.com/products')
     console.log(res.data);
     res.data.map((item)=>{
         div.innerHTML +=   `
-        <h2>Title:${item.title}</h2>
-        <img width="300" src="${item.image}" alt="product-image"/>
-        <h1>Price: ${item.price}</h1>
-        <h1>description: ${item.description}</h1>
+        <div class="card" style="width: 18rem;"  class="d-flex justify-content-around">
+        <img   width="100px" src="${item.image}"  alt="product-image">
+        <div class="card-body">
+          <h5 class="card-title">Title :${item.title}</h5>
+          <p class="card-descripation">descripation:${item.descripation}</p>
+          <p class="price">Price:${item.price}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
         <hr>`
     })
 
@@ -44,3 +49,20 @@ try{
     console.log(err);
 }
 console.log('consle after alert');
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div class="card"> <h5 class="title">Title:${item.title}</h5>
+// <img width="100" src="${item.image}" alt="product-image"/>
+// <h1 class="price">Price: ${item.price}</h1>
+// </div>

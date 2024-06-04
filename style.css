@@ -1,0 +1,29 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+ .card{
+    margin: 10px;
+    padding: 20px;
+    /* width: 50px; */
+    /* height: 170px; */
+    /* display: flex; */
+     /* align-items: center;  */
+    /* justify-content: space-around; */
+    /* text-align: center; */
+
+    
+
+
+} 
+/* .card.title{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+}
+.card.price{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+} */ 
